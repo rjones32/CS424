@@ -1,0 +1,9 @@
+#container,
+#map,
+#cssmenu
+
+map{
+    margin: 50px 0px;
+    z-index: 9;
+
+}

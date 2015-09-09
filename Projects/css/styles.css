@@ -5,6 +5,7 @@
 #cssmenu ul li,
 #cssmenu ul li a,
 
+
 #cssmenu #menu-button {
   margin: 0;
   padding: 0;
@@ -143,6 +144,7 @@
   width: 160px;
   font-size: 12px;
   background: #333333;
+    z-index: 10;
   text-decoration: none;
   color: #dddddd;
   -webkit-transition: color .2s ease;
@@ -190,7 +192,7 @@
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
 }
-@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+/*@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;
   }
@@ -329,7 +331,7 @@
   }
 }
 
-
+*/
 
 #cssmenu.align-center > ul > li:first-child > a {
   border-radius: 0;

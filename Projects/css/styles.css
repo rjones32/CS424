@@ -4,7 +4,6 @@
 #cssmenu ul,
 #cssmenu ul li,
 #cssmenu ul li a,
-#cssmenu ul li a span,
 
 #cssmenu #menu-button {
   margin: 0;
@@ -32,12 +31,11 @@
 }
 #cssmenu {
   width: auto;
-  border-radius: 4px;
+  border-radius: 10px;
   border: 1px rgba(53, 234, 226, 0.69);
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1;
   background: rgba(53, 234, 226, 0.69);
-  box-shadow: 0 1px 1px #1B6962, inset 0 -2px 0px #16524C, inset 0 1px 0 #0b323b;
 }
 
 #cssmenu > ul > li {
@@ -58,8 +56,9 @@
 #cssmenu.align-right > ul > li {
   float: right;
 }
-#cssmenu.align-right ul ul{
-  text-align: right;
+
+#cssmenu.align-right ul ul {
+    text-align: right;
 }
 
 #cssmenu > ul > li > a {
@@ -72,20 +71,22 @@
   -ms-transition: all .2s ease;
   -o-transition: all .2s ease;
   transition: all .2s ease;
-}#cssmenu > ul > li.has-sub > a {
+}
+
+#cssmenu > ul > li.has-sub > a {
     padding-right: 25px;
  }
 
-#cssmenu > ul > li.has-sub > a::after {
+#cssmenu > ul > li.has-sub > a:after {
   position: absolute;
   top: 21px;
   right: 10px;
   width: 4px;
   height: 4px;
-  border-bottom: 1px solid #000000;
-  border-right: 1px solid #000000;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
   content: "";
-  -webkit-transform: rotate(45deg);
+ -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
@@ -95,9 +96,10 @@
   -ms-transition: border-color 0.2s ease;
   -o-transition: border-color 0.2s ease;
   transition: border-color 0.2s ease;
+
 }
 #cssmenu > ul > li.has-sub:hover > a::after {
-  border-color: #ffffff;
+  border-color: #000000;
 }
 
 #cssmenu ul ul {
@@ -105,18 +107,22 @@
   left: -9999px;
 }
 
-#cssmenu li:hover >ul{
+#cssmenu li:hover > ul {
   left: auto;
-
 }
 
-#cssmenu li:hover >ul{
+#cssmenu.align-right li:hover > ul {
   right: 0;
 }
 
-#cssmenu ul ul ul{
+#cssmenu ul ul ul {
   marign-left: 100%;
   top: 0;
+}
+
+#cssmenu.align-right ul ul {
+    margin-left: 0;
+    margin-right: 100%;
 }
 #cssmenu ul ul li{
   height: 0;
@@ -126,6 +132,7 @@
   -o-transition: height .2s ease;
   transition: height .2s ease;
 }
+
 
 #cssmenu ul li:hover > ul > li {
   height: 32px;
@@ -333,8 +340,7 @@
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
-#cssmenu > ul > li:hover > a,
-#cssmenu > ul > li.active > a {
+#cssmenu > ul > li:hover > a{
   color: #444444;
 }
 #cssmenu > ul > li:hover > a,

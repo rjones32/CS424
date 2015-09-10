@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{d3-DefinitelyTyped, geojson-DefinitelyTyped, jQuery-2.0.0, jquery-latest, leaflet-DefinitelyTyped}" />
+    <file url="PROJECT" libraries="{d3-DefinitelyTyped, geojson-DefinitelyTyped, jQuery-2.0.0, leaflet-DefinitelyTyped}" />
     <includedPredefinedLibrary name="Node.js Globals" />
   </component>
 </project>

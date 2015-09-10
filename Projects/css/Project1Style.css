@@ -1,9 +1,16 @@
 #container,
 #map,
-#cssmenu
+#selectors,
+#selectors select,
+#selectors select option,
 
 map{
     margin: 50px 0px;
     z-index: 9;
 
+}
+
+#selectors > select{
+    height:50px;
+    width:200px;
 }

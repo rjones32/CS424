@@ -9,6 +9,7 @@
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="js/US_State_Boundaries.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/visualizationScript.js"></script>
     <title>Project 1</title>
 </head>
 <body>
@@ -44,14 +45,9 @@
                     width: auto;
                 }
 
-
             </style>
 
         </div>
-
-
-
-
 
     <div class="buttons">
 
@@ -66,8 +62,6 @@
                 <option>V-Day</option>
                 <option>World War II </option>
                 <option>Great Depression</option>
-                <option>Black Tuesday</option>
-                <option>World War I </option>
 
             </select>
 
@@ -97,9 +91,9 @@
 
 
 </div>
+<>
 
-
-<script>
+    <script>
 
     var map = L.map('map').setView([38.8833,-95.0167],3);
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -109,8 +103,36 @@
         accessToken: 'pk.eyJ1IjoicmpvbmVzMzIiLCJhIjoiNmM1YzhiYjg0OTdkYWViZDA2M2JmMDkxYjJmNjc5ZGMifQ.ttV5tmWinVzsgXCgFhAUrg'
     }).addTo(map);
 
-    L.geoJson(stateDate).addTo(map);
+
+    function getColor(d){
+        return d>30000000 ? '#800026':
+                d>20000000 ? '#bd0026':
+                        d>10000000 ? '#e31a1c':
+                                d>1000000 ? '#fc4e2a':
+                                        d>9000000 ? '#fd8d3c':
+                                                d>8000000 ? '#feb24c':
+                                                        d>700000 ? '#fed976':
+                                                                d>600000 ? '#ffeda0':
+                                                                        '#ffffcc';
+    }
+
+    function style(feature){
+        return{
+            fillColor: getColor(feature.properties.POPULATION),
+            weight: 2,
+            opacity:1,
+            color: 'black',
+            dashArray:'3',
+            fillOpacity: 0.7
+        };
+
+    }
+    L.geoJson(stateDate,{style:style}).addTo(map);
+
 
 </script>
+
+
+
 </body>
 </html>

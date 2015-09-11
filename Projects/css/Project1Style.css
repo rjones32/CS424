@@ -5,12 +5,13 @@
 #selectors select option,
 
 map{
-    margin: 50px 0px;
+    margin: 20px 0px;
     z-index: 9;
 
 }
 
 #selectors > select{
+    margin: -5px 0px;
     height:50px;
     width:200px;
 }

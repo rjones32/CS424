@@ -1,8 +1,11 @@
 #container,
 #map,
-#selectors,
-#selectors select,
-#selectors select option,
+#mapSelectors,
+#mapSelectors select,
+#mapSelectors select option,
+#eventSelectors,
+#eventSelectors select,
+#eventSelectors select option,
 
 map{
     margin: 20px 0px;
@@ -10,7 +13,13 @@ map{
 
 }
 
-#selectors > select{
+#mapSelectors > select{
+    margin: -5px 0px;
+    height:50px;
+    width:200px;
+}
+
+#eventSelectors > select{
     margin: -5px 0px;
     height:50px;
     width:200px;

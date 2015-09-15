@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
+    <script src="http://d3js.org/d3.v3.min.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.css" />
     <link rel="stylesheet" href="css/styles.css">
@@ -9,7 +10,8 @@
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="js/US_State_Boundaries.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/visualizationScript.js"></script>
+    <script src="js/dataScript.js"></script>
+
     <title>Project 1</title>
 </head>
 <body>
@@ -53,8 +55,71 @@
 
 
     </div>
-    <div id ="selectors">
-            <select id ="selector1">
+    <div id ="mapSelectors">
+
+
+        <select id="locBox1" onchange="updateGraph(this.value)">
+            <option value="" disabled selected style="display:none;">States</option>
+            <option value="USA">USA</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virgainia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+
+
+        </select>
+
+
+
+
+
+        </div>
+
+        <div id="eventSelectors">
+            <select id ="eventBox" onchange="">
 
                 <option>9-11 </option>
                 <option>Vietnam</option>
@@ -66,21 +131,12 @@
             </select>
 
 
-        </div>
+            </div>
 
     </div>
 
     <div class = "graphs">
-        <div class = "barGraphs">
 
-
-
-        </div>
-        <div class = "pieCharGraphs">
-
-
-
-        </div>
 
 
 
@@ -91,10 +147,12 @@
 
 
 </div>
-<>
+
 
     <script>
+    //script grab from leafletjs.com/examples/choropleth.html
 
+    var geojson;
     var map = L.map('map').setView([38.8833,-95.0167],3);
     L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -127,11 +185,49 @@
         };
 
     }
-    L.geoJson(stateDate,{style:style}).addTo(map);
+    L.geoJson(stateGeoData,{style:style}).addTo(map);
+
+    function highlightFeature(e){
+        var layer = e.target;
+
+        layer.setStyle ({
+                weight: 5,
+                color: '#666',
+                dashArray: '',
+                fillOpacity: 0.7
+            });
+            if(!L.Browser.ie&&!L.Browser.opera){
+                layer.bringToFront();
+            }
+
+        }
+
+
+    function resetHighlight(e){
+        geojson.resetStyle(e.target);
+    }
+
+        function zoomToFeature(e){
+            map.fitBounds(e.target.getBounds());
+
+        }
+
+    function onEachFeature(feature, layer) {
+        layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: zoomToFeature
+        });
+    }
+
+    geojson = L.geoJson(stateGeoData, {
+        style: style,
+        onEachFeature: onEachFeature
+    }).addTo(map);
 
 
 </script>
-
+<script src="js/barChart.js" type="text/javascript"> </script>
 
 
 </body>

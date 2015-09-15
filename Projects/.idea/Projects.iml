@@ -7,7 +7,6 @@
     <orderEntry type="library" name="jQuery-2.0.0" level="application" />
     <orderEntry type="library" name="leaflet-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="geojson-DefinitelyTyped" level="application" />
-    <orderEntry type="library" name="d3-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="jquery-latest" level="application" />
   </component>
 </module>

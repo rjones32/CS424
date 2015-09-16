@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <script src="http://d3js.org/d3.v3.min.js"></script>    <meta charset="UTF-8">
+    <title>D3 test</title>
+</head>
+<body>
+    <p>one</p>
+    <div class="test">
+
+
+
+    </div>
+
+    <script type="text/javascript">
+        d3.select("body").selectAll("div").append("p").attr("class","test").text("New Paragraph!");
+        d3.select("body").selectAll("div").append("p").attr("class","test2").text("Text in test");
+    </script>
+    <div class="test2">
+
+
+
+    </div>
+    <script type="text/javascript">
+        // width and height
+        var w = 500;
+        var h = 100;
+
+        var barPadding = 1;
+
+        var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
+            11, 12, 15, 20, 18, 17, 70, 18, 23, 25 ];
+
+        var xScale = d3.scale.ordinal()
+                .domain(d3.range(dataset.length))
+                .rangeRoundBands([0,w],0.05);
+
+        // create SVG element
+        var svg = d3.select("body")
+                .append("svg")
+                .attr("width", w)
+                .attr("height", h);
+
+        svg.selectAll("rect")
+                .data(dataset)
+                .enter()
+                .append("rect")
+                .attr("x", function(d, i) {
+                    return xScale(i) ;
+                })
+                .attr("y", function(d) {
+                    return h - (d * 4);
+                })
+                .attr("width",xScale.rangeBand())
+                .attr("height", function(d) {
+                    return d * 4;
+                })
+                .attr("fill", function(d) {
+                    return "rgb(0, 0, " + (d * 10) + ")";
+                });
+
+        svg.selectAll("text")
+                .data(dataset)
+                .enter()
+                .append("text")
+                .text(function(d) {
+                    return d;
+                })
+                .attr({
+                    "text-anchor": "middle",
+                    x: function(d, i) {
+                        return i * (w / dataset.length) + (w / dataset.length - barPadding) / 2;
+                    },
+                    y: function(d) {
+                        return h - (d * 4) + 14;
+                    },
+                    "font-family": "sans-serif",
+                    "font-size": "11px",
+                    fill: "white"
+                });
+    </script>
+
+
+</body>
+</html>

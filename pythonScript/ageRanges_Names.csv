@@ -1,0 +1,416 @@
+United States,0-10,40396449
+United States,10-20,41670613
+United States,20-30,44260108
+United States,30-40,41098701
+United States,40-50,41334837
+United States,50-60,44061580
+United States,60-70,33890892
+United States,70-80,18995348
+Alabama,0-10,601755
+Alabama,10-20,631585
+Alabama,20-30,664051
+Alabama,30-40,598567
+Alabama,40-50,620891
+Alabama,50-60,679497
+Alabama,60-70,545166
+Alabama,70-80,318097
+Alaska,0-10,106641
+Alaska,10-20,98170
+Alaska,20-30,112334
+Alaska,30-40,95220
+Alaska,40-50,87654
+Alaska,50-60,103139
+Alaska,60-70,71061
+Alaska,70-80,27906
+Arizona,0-10,892597
+Arizona,10-20,910898
+Arizona,20-30,930951
+Arizona,30-40,854710
+Arizona,40-50,826240
+Arizona,50-60,846898
+Arizona,60-70,730438
+Arizona,70-80,463338
+Arkansas,0-10,390504
+Arkansas,10-20,393137
+Arkansas,20-30,399517
+Arkansas,30-40,371636
+Arkansas,40-50,365742
+Arkansas,50-60,397962
+Arkansas,60-70,328313
+Arkansas,70-80,200014
+California,0-10,5069597
+California,10-20,5138937
+California,20-30,5757584
+California,30-40,5331232
+California,40-50,5180916
+California,50-60,5113012
+California,60-70,3729317
+California,70-80,2017154
+Colorado,0-10,689922
+Colorado,10-20,695664
+Colorado,20-30,765266
+Colorado,30-40,747592
+Colorado,40-50,699923
+Colorado,50-60,729575
+Colorado,60-70,558000
+Colorado,70-80,274026
+Connecticut,0-10,399603
+Connecticut,10-20,481436
+Connecticut,20-30,461450
+Connecticut,30-40,425973
+Connecticut,40-50,492465
+Connecticut,50-60,553581
+Connecticut,60-70,395754
+Connecticut,70-80,217363
+Delaware,0-10,112860
+Delaware,10-20,117017
+Delaware,20-30,126370
+Delaware,30-40,111537
+Delaware,40-50,118172
+Delaware,50-60,133591
+Delaware,60-70,110625
+Delaware,70-80,64951
+District of Columbia,0-10,73982
+District of Columbia,10-20,63291
+District of Columbia,20-30,135101
+District of Columbia,30-40,121661
+District of Columbia,40-50,78872
+District of Columbia,50-60,75490
+District of Columbia,60-70,57591
+District of Columbia,70-80,29332
+Florida,0-10,2210461
+Florida,10-20,2305504
+Florida,20-30,2578434
+Florida,30-40,2377737
+Florida,40-50,2557576
+Florida,50-60,2776808
+Florida,60-70,2383795
+Florida,70-80,1612786
+Georgia,0-10,1367218
+Georgia,10-20,1400478
+Georgia,20-30,1402687
+Georgia,30-40,1331402
+Georgia,40-50,1393737
+Georgia,50-60,1343255
+Georgia,60-70,994250
+Georgia,70-80,526969
+Hawaii,0-10,177763
+Hawaii,10-20,161293
+Hawaii,20-30,189671
+Hawaii,30-40,176598
+Hawaii,40-50,167549
+Hawaii,50-60,184262
+Hawaii,60-70,161664
+Hawaii,70-80,87675
+Idaho,0-10,237585
+Idaho,10-20,237134
+Idaho,20-30,217287
+Idaho,30-40,208990
+Idaho,40-50,191784
+Idaho,50-60,208668
+Idaho,60-70,175424
+Idaho,70-80,98667
+Illinois,0-10,1619011
+Illinois,10-20,1709020
+Illinois,20-30,1779287
+Illinois,30-40,1722579
+Illinois,40-50,1696571
+Illinois,50-60,1798410
+Illinois,60-70,1321783
+Illinois,70-80,725481
+Indiana,0-10,860046
+Indiana,10-20,905515
+Indiana,20-30,906645
+Indiana,30-40,826666
+Indiana,40-50,842698
+Indiana,50-60,921528
+Indiana,60-70,700460
+Indiana,70-80,386422
+Iowa,0-10,400589
+Iowa,10-20,415808
+Iowa,20-30,420886
+Iowa,30-40,383096
+Iowa,40-50,368612
+Iowa,50-60,433842
+Iowa,60-70,341093
+Iowa,70-80,196479
+Kansas,0-10,403862
+Kansas,10-20,399834
+Kansas,20-30,399746
+Kansas,30-40,364552
+Kansas,40-50,337402
+Kansas,50-60,392451
+Kansas,60-70,299296
+Kansas,70-80,165012
+Kentucky,0-10,558213
+Kentucky,10-20,567392
+Kentucky,20-30,587111
+Kentucky,30-40,554246
+Kentucky,40-50,575432
+Kentucky,50-60,626667
+Kentucky,60-70,494735
+Kentucky,70-80,275490
+Louisiana,0-10,622504
+Louisiana,10-20,607349
+Louisiana,20-30,679790
+Louisiana,30-40,610580
+Louisiana,40-50,566784
+Louisiana,50-60,639710
+Louisiana,60-70,487594
+Louisiana,70-80,264479
+Maine,0-10,135960
+Maine,10-20,156789
+Maine,20-30,156195
+Maine,30-40,146931
+Maine,40-50,174921
+Maine,50-60,216198
+Maine,60-70,180555
+Maine,70-80,98856
+Maryland,0-10,744732
+Maryland,10-20,763139
+Maryland,20-30,812777
+Maryland,30-40,774901
+Maryland,40-50,809909
+Maryland,50-60,872919
+Maryland,60-70,627407
+Maryland,70-80,331734
+Massachusetts,0-10,742377
+Massachusetts,10-20,855311
+Massachusetts,20-30,971866
+Massachusetts,30-40,850529
+Massachusetts,40-50,906984
+Massachusetts,50-60,990936
+Massachusetts,60-70,736485
+Massachusetts,70-80,397463
+Michigan,0-10,1175709
+Michigan,10-20,1320969
+Michigan,20-30,1338193
+Michigan,30-40,1156725
+Michigan,40-50,1281155
+Michigan,50-60,1469219
+Michigan,60-70,1138719
+Michigan,70-80,624245
+Minnesota,0-10,710145
+Minnesota,10-20,714837
+Minnesota,20-30,729433
+Minnesota,30-40,716970
+Minnesota,40-50,685975
+Minnesota,50-60,789687
+Minnesota,60-70,577601
+Minnesota,70-80,313188
+Mississippi,0-10,403649
+Mississippi,10-20,410886
+Mississippi,20-30,415167
+Mississippi,30-40,373633
+Mississippi,40-50,369714
+Mississippi,50-60,403913
+Mississippi,60-70,317645
+Mississippi,70-80,182789
+Missouri,0-10,764073
+Missouri,10-20,785299
+Missouri,20-30,827966
+Missouri,30-40,758454
+Missouri,40-50,746416
+Missouri,50-60,865573
+Missouri,60-70,665887
+Missouri,70-80,387641
+Montana,0-10,125154
+Montana,10-20,125948
+Montana,20-30,136114
+Montana,30-40,123258
+Montana,40-50,115375
+Montana,50-60,149908
+Montana,60-70,130825
+Montana,70-80,70778
+Nebraska,0-10,263142
+Nebraska,10-20,256619
+Nebraska,20-30,258826
+Nebraska,30-40,241642
+Nebraska,40-50,220256
+Nebraska,50-60,253582
+Nebraska,60-70,194245
+Nebraska,70-80,107735
+Nevada,0-10,366044
+Nevada,10-20,362571
+Nevada,20-30,388209
+Nevada,30-40,385546
+Nevada,40-50,383702
+Nevada,50-60,375487
+Nevada,60-70,309245
+Nevada,70-80,174931
+New Hampshire,0-10,136597
+New Hampshire,10-20,168775
+New Hampshire,20-30,167491
+New Hampshire,30-40,148378
+New Hampshire,40-50,183279
+New Hampshire,50-60,219895
+New Hampshire,60-70,163667
+New Hampshire,70-80,83987
+New Jersey,0-10,1083368
+New Jersey,10-20,1150332
+New Jersey,20-30,1139696
+New Jersey,30-40,1143727
+New Jersey,40-50,1254219
+New Jersey,50-60,1326378
+New Jersey,60-70,939420
+New Jersey,70-80,525682
+New Mexico,0-10,279490
+New Mexico,10-20,277692
+New Mexico,20-30,287227
+New Mexico,30-40,256768
+New Mexico,40-50,241602
+New Mexico,50-60,282482
+New Mexico,60-70,237635
+New Mexico,70-80,134009
+New York,0-10,2324754
+New York,10-20,2435368
+New York,20-30,2902308
+New York,30-40,2607290
+New York,40-50,2614334
+New York,50-60,2790885
+New York,60-70,2079950
+New York,70-80,1162552
+North Carolina,0-10,1252371
+North Carolina,10-20,1298379
+North Carolina,20-30,1308343
+North Carolina,30-40,1237564
+North Carolina,40-50,1336796
+North Carolina,50-60,1356619
+North Carolina,60-70,1089669
+North Carolina,70-80,613891
+North Dakota,0-10,99409
+North Dakota,10-20,91899
+North Dakota,20-30,122789
+North Dakota,30-40,92703
+North Dakota,40-50,79239
+North Dakota,50-60,98934
+North Dakota,60-70,74042
+North Dakota,70-80,40661
+Ohio,0-10,1418710
+Ohio,10-20,1528514
+Ohio,20-30,1535733
+Ohio,30-40,1397793
+Ohio,40-50,1481577
+Ohio,50-60,1694855
+Ohio,60-70,1313052
+Ohio,70-80,733012
+Oklahoma,0-10,535123
+Oklahoma,10-20,518394
+Oklahoma,20-30,544561
+Oklahoma,30-40,499410
+Oklahoma,40-50,460520
+Oklahoma,50-60,516499
+Oklahoma,60-70,405203
+Oklahoma,70-80,239001
+Oregon,0-10,470347
+Oregon,10-20,484679
+Oregon,20-30,533382
+Oregon,30-40,536193
+Oregon,40-50,502096
+Oregon,50-60,540742
+Oregon,60-70,486257
+Oregon,70-80,257216
+Pennsylvania,0-10,1454767
+Pennsylvania,10-20,1603710
+Pennsylvania,20-30,1715503
+Pennsylvania,30-40,1514496
+Pennsylvania,40-50,1641102
+Pennsylvania,50-60,1896991
+Pennsylvania,60-70,1483475
+Pennsylvania,70-80,852214
+Rhode Island,0-10,112698
+Rhode Island,10-20,135703
+Rhode Island,20-30,152882
+Rhode Island,30-40,124557
+Rhode Island,40-50,137343
+Rhode Island,50-60,156855
+Rhode Island,60-70,117581
+Rhode Island,70-80,63621
+South Carolina,0-10,598730
+South Carolina,10-20,610535
+South Carolina,20-30,650805
+South Carolina,30-40,585132
+South Carolina,40-50,614699
+South Carolina,50-60,664904
+South Carolina,60-70,574320
+South Carolina,70-80,325108
+South Dakota,0-10,120758
+South Dakota,10-20,113499
+South Dakota,20-30,115615
+South Dakota,30-40,104037
+South Dakota,40-50,94765
+South Dakota,50-60,117687
+South Dakota,60-70,93500
+South Dakota,70-80,51084
+Tennessee,0-10,818117
+Tennessee,10-20,841063
+Tennessee,20-30,887337
+Tennessee,30-40,825728
+Tennessee,40-50,863061
+Tennessee,50-60,911383
+Tennessee,60-70,735577
+Tennessee,70-80,417259
+Texas,0-10,3967059
+Texas,10-20,3886800
+Texas,20-30,3904339
+Texas,30-40,3733270
+Texas,40-50,3516612
+Texas,50-60,3382155
+Texas,60-70,2418793
+Texas,70-80,1287826
+Utah,0-10,514327
+Utah,10-20,475491
+Utah,20-30,459229
+Utah,30-40,435174
+Utah,40-50,326053
+Utah,50-60,304708
+Utah,60-70,227061
+Utah,70-80,124151
+Vermont,0-10,63299
+Vermont,10-20,79458
+Vermont,20-30,81899
+Vermont,30-40,70131
+Vermont,40-50,79210
+Vermont,50-60,100332
+Vermont,60-70,82300
+Vermont,70-80,42537
+Virginia,0-10,1034653
+Virginia,10-20,1054911
+Virginia,20-30,1144623
+Virginia,30-40,1080456
+Virginia,40-50,1103646
+Virginia,50-60,1170352
+Virginia,60-70,872955
+Virginia,70-80,475867
+Washington,0-10,896230
+Washington,10-20,876755
+Washington,20-30,981198
+Washington,30-40,950786
+Washington,40-50,907344
+Washington,50-60,973998
+Washington,60-70,779324
+Washington,70-80,400773
+West Virginia,0-10,207356
+West Virginia,10-20,218512
+West Virginia,20-30,232261
+West Virginia,30-40,221922
+West Virginia,40-50,237875
+West Virginia,50-60,271133
+West Virginia,60-70,242721
+West Virginia,70-80,138332
+Wisconsin,0-10,704171
+Wisconsin,10-20,753686
+Wisconsin,20-30,761702
+Wisconsin,30-40,713576
+Wisconsin,40-50,729712
+Wisconsin,50-60,854536
+Wisconsin,60-70,642887
+Wisconsin,70-80,352396
+Wyoming,0-10,78417
+Wyoming,10-20,74628
+Wyoming,20-30,82271
+Wyoming,30-40,76447
+Wyoming,40-50,66326
+Wyoming,50-60,83489
+Wyoming,60-70,66530
+Wyoming,70-80,33168

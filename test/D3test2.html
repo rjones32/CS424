@@ -34,14 +34,17 @@
             .append("g")
             .attr("transform",
             "translate(" + margin.left + "," + margin.top + ")");
-    d3.csv("popEST.csv", function(error, data) {
+    d3.csv("ageRanges_Names.csv", function(error, data) {
         data.forEach(function(d) {
-            d.POPEST = parseInt(d.POPEST);
-            d.AGE = +d.AGE;
+            d.POP = parseInt(d.POP);
+            console.log(d.POP);
+            d.Age = +d.Age;
         });
 
-        x.domain(data.map(function(d) { return d.AGE; }));
-        y.domain([0, d3.max(data, function(d) { return d.POPEST; })]);
+        x.domain(data.map(function(d) { return d.Age; }));
+        y.domain([0, d3.max(data, function(d) {
+            console.log(d.POP);
+            return d.POP; })]);
         svg.append("g")
                 .attr("class", "x axis")
                 .attr("transform", "translate(0," + height + ")")
@@ -64,10 +67,10 @@
                 .data(data)
                 .enter().append("rect")
                 .style("fill", "steelblue")
-                .attr("x", function(d) { return x(d.AGE); })
+                .attr("x", function(d) { return x(d.Age); })
                 .attr("width", x.rangeBand())
-                .attr("y", function(d) { return y(d.POPEST); })
-                .attr("height", function(d) { return height - y(d.POPEST); });
+                .attr("y", function(d) { return y(d.POP); })
+                .attr("height", function(d) { return height - y(d.POP); });
     });
 </script>
 

@@ -26,8 +26,39 @@ d3.csv('Data/StateData_Headers.csv',function(error,data){
     //load data to global variable usaData
     usaData = data;
 
+    graphOnCreate();
+
+});
+d3.csv('Data/ageRanges.csv',function(error,data){
+    if(error) {
+        //if error is not null then something went wrong
+        console.log(error);
+    }
+    else{
+        //if error is null than fille loaded as expected
+        console.log(data);
+    }
+
+    data.forEach(function(d) {
+        d.POP = parseInt(d.POP);
+    });
+
+    //load data to global variable usaData
+    usaAgeRange = data;
+
 });
 
+
+function graphOnCreate(){
+    stateData.length = 0;
+    for(var i=0;i<usaData.length;i++){
+        if(usaData[i].STATE=="United States"){
+            stateData[i] = usaData[i];
+        }
+    }
+    createBarGraph();
+
+}
 
 function locSelect(){
     var selectBox = document.getElementById("locBox1");

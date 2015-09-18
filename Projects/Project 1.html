@@ -9,38 +9,13 @@
     <script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="js/US_State_Boundaries.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/dataScript.js"></script>
+    <script src="js/barChart.js"></script>
 
     <title>Project 1</title>
 </head>
 <body>
 <div class ="container">
-    <div id="cssmenu">
-        <ul>
-
-            <li><a href="Homepage.html">Home</a></li>
-            <li class="active has-sub"><a href="#">Projects</a>
-                <ul>
-                    <li class="has-sub"><a href="#">Project 1</a>
-                        <ul>
-                            <li><a href="Project%201.html">Visualization</a></li>
-                            <li><a href="#">How To Use</a></li>
-                            <li><a href="#">Data</a></li>
-                            <li><a href="#">Source Code</a></li>
-                            <li><a href="#">Data Insight</a></li>
-                        </ul>
-
-                    </li>
-
-                </ul>
-            <li><a href="aboutMe.html">About Me</a></li>
-        </ul>
-
-
-    </div>
-
-
     <div id="map">
             <style>
                 #map{height: 400px;
@@ -116,6 +91,8 @@
 
 
 
+
+
         </div>
 
         <div id="eventSelectors">
@@ -135,19 +112,16 @@
 
     </div>
 
-    <div class = "graphs">
-        <div class="graph1">
-
-
+    <div id = "chart" >
+        <div id ="chart1">
 
         </div>
+        <div id = "Graph_middle">
 
+        </div>
+        <div id = "Graph_bottom">
 
-
-
-
-
-    </div>
+        </div>
 
 
 
@@ -234,7 +208,8 @@
 
 
 </script>
-<script src="js/barChart.js" type="text/javascript"> </script>
+
+
 
 
 </body>

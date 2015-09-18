@@ -5,42 +5,91 @@
     <title></title>
     <script src='http://d3js.org/d3.v3.min.js'></script>
 </head>
+<style>
+
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        width: 960px;
+        height: 500px;
+        position: relative;
+    }
+    svg{
+        width: 100%;
+        height: 100%;
+    }
+    path.slice{
+        stroke-width:2px;
+    }
+
+    polyline{
+        opacity: .3;
+        stroke: black;
+        stroke-width: 2px;
+        fill: none;
+    }
+
+</style>
+
 <body>
+
+
     <script type='text/javascript'>
-
-        var pie = d3.layout.pie();
-        var pieData;
-        var w = 300;
-        var h = 300;
-
-        var outerRadius = w/2;
-        var innerRadius = 0;
-        var arc = d3.svg.arc()
-                .innerRadius(innerRadius)
-                .outerRadius(outerRadius);
-
-        d3.csv("ageRanges_Names.csv", function(error, data) {
-                    pieData = data;
-        });
-        var pie_values = d3.values(pieData.POP);
 
         var svg = d3.select("body")
                 .append("svg")
-                .attr("width",w)
-                .attr("height",h);
-        var arcs = svg.selectAll("g.arc")
-                .data(pie(pie_values))
-                .enter()
                 .append("g")
-                .attr("class","arc")
-                .attr("transform","translate("+outerRadius+","+outerRadius+")");
-        arcs.append("path")
-                .attr("fill",function(d,i){
-            return color(i);
-        })
-        .attr("d",arc);
 
+        svg.append("g")
+                .attr("class", "slices");
+        svg.append("g")
+                .attr("class", "labels");
+        svg.append("g")
+                .attr("class", "lines");
 
+        var width = 960,
+                height = 500,
+                radius = Math.min(width, height) / 2;
+
+        var key;
+        var color = d3.scale.ordinal()
+                .range(["#a50026","#d73027","#f46d43","#fdae61","#fee090","#e0f3f8","#abd9e9","#74add1","#4575b4","#313695"]);
+        var arc = d3.svg.arc()
+                .outerRadius(radius - 10)
+                .innerRadius(0);
+        var pie = d3.layout.pie()
+                .sort(null)
+                .value(function(d) { return d.POP; });
+        var svg = d3.select("body").append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+        d3.csv("ageRanges.csv", function(error, data) {
+            console.log(data);
+            data.forEach(function (d) {
+                d.POP = +d.POP;
+                console.log(d.POP);
+            });
+
+            var g = svg.selectAll(".arc")
+                    .data(pie(data))
+                    .enter().append("g")
+                    .attr("class", "arc");
+            g.append("path")
+                    .attr("d", arc)
+                    .style("fill", function (d) {
+                        return color(d.data.AGE);
+                    });
+            g.append("text")
+                    .attr("transform", function (d) {
+                        return "translate(" + arc.centroid(d) + ")";
+                    })
+                    .attr("dy", "-.35em")
+                    .style("text-anchor", "middle")
+                    .text(function (d) {
+                        return d.data.AGE;
+                    });
+        });
 
     </script>
 

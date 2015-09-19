@@ -2,12 +2,15 @@
 #chart,
 #chart1,
 #map,
+#menu-bar,
 #mapSelectors,
 #mapSelectors select,
 #mapSelectors select option,
 #eventSelectors,
 #eventSelectors select,
 #eventSelectors select option,
+
+
 
 #map{
     margin: 10px 0px;
@@ -17,7 +20,6 @@
 
 #mapSelectors > select{
     margin: -5px 0px;
-    float: right;
     height:20px;
     width:100px;
 }
@@ -37,3 +39,17 @@
     float: left;
     background-color: #f1f1f1;
 }
+
+.axis text{
+    font: 10px sans-serif;
+
+}
+
+.axis line,
+.axis path{
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+
+}
+

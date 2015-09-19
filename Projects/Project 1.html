@@ -11,6 +11,7 @@
     <script src="js/US_State_Boundaries.js"></script>
     <script src="js/dataScript.js"></script>
     <script src="js/barChart.js"></script>
+    <script src="js/PieChart.js"></script>
 
     <title>Project 1</title>
 </head>
@@ -30,63 +31,170 @@
 
 
     </div>
-    <div id ="mapSelectors">
+    <div id ="menu-bar">
+        <div id ="mapSelectors">
 
 
-        <select id="locBox1" onchange="updateGraph(this.value)">
-            <option value="" disabled selected style="display:none;">States</option>
-            <option value="United States">USA</option>
-            <option value="Alabama">Alabama</option>
-            <option value="Alaska">Alaska</option>
-            <option value="Arizona">Arizona</option>
-            <option value="Arkansas">Arkansas</option>
-            <option value="California">California</option>
-            <option value="Colorado">Colorado</option>
-            <option value="Connecticut">Connecticut</option>
-            <option value="Delaware">Delaware</option>
-            <option value="Florida">Florida</option>
-            <option value="Georgia">Georgia</option>
-            <option value="Hawaii">Hawaii</option>
-            <option value="Idaho">Idaho</option>
-            <option value="Illinois">Illinois</option>
-            <option value="Indiana">Indiana</option>
-            <option value="Iowa">Iowa</option>
-            <option value="Kansas">Kansas</option>
-            <option value="Kentucky">Kentucky</option>
-            <option value="Louisiana">Louisiana</option>
-            <option value="Maine">Maine</option>
-            <option value="Maryland">Maryland</option>
-            <option value="Massachusetts">Massachusetts</option>
-            <option value="Michigan">Michigan</option>
-            <option value="Mississippi">Mississippi</option>
-            <option value="Montana">Montana</option>
-            <option value="Nebraska">Nebraska</option>
-            <option value="Nevada">Nevada</option>
-            <option value="New Hampshire">New Hampshire</option>
-            <option value="New Jersey">New Jersey</option>
-            <option value="New Mexico">New Mexico</option>
-            <option value="New York">New York</option>
-            <option value="North Carolina">North Carolina</option>
-            <option value="North Dakota">North Dakota</option>
-            <option value="Ohio">Ohio</option>
-            <option value="Oklahoma">Oklahoma</option>
-            <option value="Oregon">Oregon</option>
-            <option value="Pennsylvania">Pennsylvania</option>
-            <option value="Rhode Island">Rhode Island</option>
-            <option value="South Carolina">South Carolina</option>
-            <option value="South Dakota">South Dakota</option>
-            <option value="Tennessee">Tennessee</option>
-            <option value="Texas">Texas</option>
-            <option value="Vermont">Vermont</option>
-            <option value="Virgainia">Virginia</option>
-            <option value="Washington">Washington</option>
-            <option value="West Virginia">West Virginia</option>
-            <option value="Wisconsin">Wisconsin</option>
-            <option value="Wyoming">Wyoming</option>
+            <select id="locBox1" onchange="updateGraph(this.value)">
+                <option value="United States">USA</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Delaware">Delaware</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Iowa">Iowa</option>
+                <option value="Kansas">Kansas</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Louisiana">Louisiana</option>
+                <option value="Maine">Maine</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Montana">Montana</option>
+                <option value="Nebraska">Nebraska</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="New York">New York</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="North Dakota">North Dakota</option>
+                <option value="Ohio">Ohio</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="South Dakota">South Dakota</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Texas">Texas</option>
+                <option value="Vermont">Vermont</option>
+                <option value="Virgainia">Virginia</option>
+                <option value="Washington">Washington</option>
+                <option value="West Virginia">West Virginia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Wyoming">Wyoming</option>
 
 
-        </select>
+            </select>
+            <select id="locBox2" onchange="updateGraph(this.value)">
+                <option value="" disabled selected style="display:none;">States</option>
+                <option value="United States">USA</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Delaware">Delaware</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Iowa">Iowa</option>
+                <option value="Kansas">Kansas</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Louisiana">Louisiana</option>
+                <option value="Maine">Maine</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Montana">Montana</option>
+                <option value="Nebraska">Nebraska</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="New York">New York</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="North Dakota">North Dakota</option>
+                <option value="Ohio">Ohio</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="South Dakota">South Dakota</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Texas">Texas</option>
+                <option value="Vermont">Vermont</option>
+                <option value="Virgainia">Virginia</option>
+                <option value="Washington">Washington</option>
+                <option value="West Virginia">West Virginia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Wyoming">Wyoming</option>
 
+
+            </select>
+            <select id="locBox3" onchange="updateGraph(this.value)">
+                <option value="" disabled selected style="display:none;">States</option>
+                <option value="United States">USA</option>
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Connecticut">Connecticut</option>
+                <option value="Delaware">Delaware</option>
+                <option value="Florida">Florida</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Hawaii">Hawaii</option>
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Iowa">Iowa</option>
+                <option value="Kansas">Kansas</option>
+                <option value="Kentucky">Kentucky</option>
+                <option value="Louisiana">Louisiana</option>
+                <option value="Maine">Maine</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Montana">Montana</option>
+                <option value="Nebraska">Nebraska</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New Hampshire">New Hampshire</option>
+                <option value="New Jersey">New Jersey</option>
+                <option value="New Mexico">New Mexico</option>
+                <option value="New York">New York</option>
+                <option value="North Carolina">North Carolina</option>
+                <option value="North Dakota">North Dakota</option>
+                <option value="Ohio">Ohio</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Oregon">Oregon</option>
+                <option value="Pennsylvania">Pennsylvania</option>
+                <option value="Rhode Island">Rhode Island</option>
+                <option value="South Carolina">South Carolina</option>
+                <option value="South Dakota">South Dakota</option>
+                <option value="Tennessee">Tennessee</option>
+                <option value="Texas">Texas</option>
+                <option value="Vermont">Vermont</option>
+                <option value="Virgainia">Virginia</option>
+                <option value="Washington">Washington</option>
+                <option value="West Virginia">West Virginia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Wyoming">Wyoming</option>
+
+
+            </select>
+
+            <button onclick="changeAgeRange()"> Age Range </button>
 
 
 
@@ -97,18 +205,18 @@
 
         <div id="eventSelectors">
             <select id ="eventBox" onchange="">
-
+                <option>Great Recession</option>
                 <option>9-11 </option>
                 <option>Vietnam</option>
                 <option>Wood Stock</option>
-                <option>V-Day</option>
-                <option>World War II </option>
-                <option>Great Depression</option>
-
+                <option>D-Day</option>
             </select>
 
 
-            </div>
+        </div>
+
+
+    </div>
 
     </div>
 
@@ -116,10 +224,10 @@
         <div id ="chart1">
 
         </div>
-        <div id = "Graph_middle">
+        <div id = "chart2">
 
         </div>
-        <div id = "Graph_bottom">
+        <div id = "chart3">
 
         </div>
 

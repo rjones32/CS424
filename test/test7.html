@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
 <style>
 
     .bar {
@@ -22,6 +27,9 @@
     }
 
 </style>
+<body>
+
+
 <svg class="chart"></svg>
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
@@ -50,12 +58,7 @@
             .append("g")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.csv("ageRanges.csv", function(error, data) {
-        console.log(data);
-        data.forEach(function (d) {
-            d.POP = +d.POP;
-
-        });
+    d3.tsv("popEST.csv", type, function(error, data) {
         x.domain(data.map(function(d) { return d.AGE; }));
         y.domain([0, d3.max(data, function(d) { return d.POP; })]);
 
@@ -79,8 +82,11 @@
     });
 
     function type(d) {
-        d.AGE = +d.AGE; // coerce to number
+        d.POP = +d.POP; // coerce to number
         return d;
     }
 
 </script>
+
+</body>
+</html>

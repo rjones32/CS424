@@ -3,7 +3,9 @@
  */
 var usaAgeRange;
 var usaData;
-var mapLoc;
+var mapLoc = "United States";
+var graphData;
+var AgeRange = false;
 var stateData = [];
 
 
@@ -20,7 +22,7 @@ d3.csv('Data/StateData_Headers.csv',function(error,data){
 
     data.forEach(function(d) {
         d.POP = parseInt(d.POP);
-        d.AGE = +d.AGE;
+        //d.AGE = +d.AGE;
     });
 
     //load data to global variable usaData
@@ -56,7 +58,9 @@ function graphOnCreate(){
             stateData[i] = usaData[i];
         }
     }
+    graphData= usaData;
     createBarGraph();
+    createPieChart();
 
 }
 
@@ -70,12 +74,32 @@ function locSelect(){
 
 function grabStateData(){
     stateData.length = 0;
-    for(var i=0;i<usaData.length;i++){
-        if(usaData[i].STATE==mapLoc){
-                stateData[i] = usaData[i];
+    for(var i=0;i<graphData.length;i++){
+        if(graphData[i].STATE==mapLoc){
+                stateData[i] = graphData[i];
 
         }
     }
+
+}
+
+function changeAgeRange(){
+    if(AgeRange == false){
+        graphData = usaAgeRange;
+        AgeRange = true;
+
+    }
+    else{
+        graphData = usaData;
+        AgeRange  = false;
+    }
+    console.log(mapLoc);
+
+    if (mapLoc != "United States")
+        locSelect();
+
+    updateGraph();
+    updatePie();
 
 }
 

@@ -170,7 +170,7 @@ Alabama,81,19703
 Alabama,82,18311
 Alabama,83,16703
 Alabama,84,15780
-Alabama,85,83567
+Alabama,85+,83567
 Alaska,0,11157
 Alaska,1,11048
 Alaska,2,10713
@@ -256,7 +256,7 @@ Alaska,81,1405
 Alaska,82,1303
 Alaska,83,1225
 Alaska,84,1111
-Alaska,85,5931
+Alaska,85+,5931
 Arizona,0,85876
 Arizona,1,85845
 Arizona,2,85064
@@ -342,7 +342,7 @@ Arizona,81,28013
 Arizona,82,26256
 Arizona,83,24455
 Arizona,84,23147
-Arizona,85,124772
+Arizona,85+,124772
 Arkansas,0,37936
 Arkansas,1,38151
 Arkansas,2,38827
@@ -428,7 +428,7 @@ Arkansas,81,12339
 Arkansas,82,11562
 Arkansas,83,10677
 Arkansas,84,9978
-Arkansas,85,55050
+Arkansas,85+,55050
 California,0,502993
 California,1,504342
 California,2,496348
@@ -514,7 +514,7 @@ California,81,131185
 California,82,123529
 California,83,117880
 California,84,113587
-California,85,688650
+California,85+,688650
 Colorado,0,66471
 Colorado,1,66335
 Colorado,2,66169
@@ -600,7 +600,7 @@ Colorado,81,16604
 Colorado,82,15656
 Colorado,83,14934
 Colorado,84,13626
-Colorado,85,81627
+Colorado,85+,81627
 Connecticut,0,36771
 Connecticut,1,37081
 Connecticut,2,37861
@@ -686,7 +686,7 @@ Connecticut,81,14769
 Connecticut,82,14354
 Connecticut,83,13963
 Connecticut,84,13480
-Connecticut,85,89785
+Connecticut,85+,89785
 Delaware,0,11122
 Delaware,1,11092
 Delaware,2,11347
@@ -772,7 +772,7 @@ Delaware,81,3885
 Delaware,82,3827
 Delaware,83,3490
 Delaware,84,3287
-Delaware,85,17951
+Delaware,85+,17951
 District of Columbia,0,9147
 District of Columbia,1,8966
 District of Columbia,2,8372
@@ -858,7 +858,7 @@ District of Columbia,81,1919
 District of Columbia,82,1798
 District of Columbia,83,1619
 District of Columbia,84,1698
-District of Columbia,85,11203
+District of Columbia,85+,11203
 Florida,0,215254
 Florida,1,214944
 Florida,2,217766
@@ -944,7 +944,7 @@ Florida,81,105154
 Florida,82,100302
 Florida,83,94836
 Florida,84,89044
-Florida,85,522291
+Florida,85+,522291
 Georgia,0,129104
 Georgia,1,129915
 Georgia,2,132990
@@ -1030,7 +1030,7 @@ Georgia,81,30431
 Georgia,82,28099
 Georgia,83,25607
 Georgia,84,23923
-Georgia,85,131194
+Georgia,85+,131194
 Hawaii,0,18853
 Hawaii,1,18462
 Hawaii,2,18117
@@ -1116,7 +1116,7 @@ Hawaii,81,6027
 Hawaii,82,5862
 Hawaii,83,5612
 Hawaii,84,5538
-Hawaii,85,36891
+Hawaii,85+,36891
 Idaho,0,22805
 Idaho,1,22721
 Idaho,2,22211
@@ -1202,7 +1202,7 @@ Idaho,81,5892
 Idaho,82,5598
 Idaho,83,5006
 Idaho,84,4718
-Idaho,85,27349
+Idaho,85+,27349
 Illinois,0,156134
 Illinois,1,156360
 Illinois,2,158115
@@ -1288,7 +1288,7 @@ Illinois,81,47259
 Illinois,82,44643
 Illinois,83,43255
 Illinois,84,41384
-Illinois,85,256052
+Illinois,85+,256052
 Indiana,0,82993
 Indiana,1,83660
 Indiana,2,83634
@@ -1374,7 +1374,7 @@ Indiana,81,24971
 Indiana,82,23428
 Indiana,83,22189
 Indiana,84,21162
-Indiana,85,126423
+Indiana,85+,126423
 Iowa,0,38771
 Iowa,1,39007
 Iowa,2,39077
@@ -1460,7 +1460,7 @@ Iowa,81,13799
 Iowa,82,13473
 Iowa,83,12764
 Iowa,84,12299
-Iowa,85,78702
+Iowa,85+,78702
 Kansas,0,39922
 Kansas,1,40353
 Kansas,2,39784
@@ -1546,7 +1546,7 @@ Kansas,81,11518
 Kansas,82,11031
 Kansas,83,10546
 Kansas,84,10240
-Kansas,85,63827
+Kansas,85+,63827
 Kentucky,0,55075
 Kentucky,1,55600
 Kentucky,2,55238
@@ -1632,7 +1632,7 @@ Kentucky,81,16854
 Kentucky,82,15702
 Kentucky,83,14482
 Kentucky,84,13867
-Kentucky,85,75895
+Kentucky,85+,75895
 Louisiana,0,61601
 Louisiana,1,61670
 Louisiana,2,61775
@@ -1718,7 +1718,7 @@ Louisiana,81,16559
 Louisiana,82,15682
 Louisiana,83,14526
 Louisiana,84,13460
-Louisiana,85,74426
+Louisiana,85+,74426
 Maine,0,12709
 Maine,1,12872
 Maine,2,13051
@@ -1804,7 +1804,7 @@ Maine,81,6465
 Maine,82,6293
 Maine,83,5853
 Maine,84,5380
-Maine,85,31721
+Maine,85+,31721
 Maryland,0,73284
 Maryland,1,73552
 Maryland,2,73825
@@ -1890,7 +1890,7 @@ Maryland,81,21111
 Maryland,82,19866
 Maryland,83,18615
 Maryland,84,17628
-Maryland,85,111008
+Maryland,85+,111008
 Massachusetts,0,73200
 Massachusetts,1,73225
 Massachusetts,2,72928
@@ -1976,7 +1976,7 @@ Massachusetts,81,27258
 Massachusetts,82,26347
 Massachusetts,83,25296
 Massachusetts,84,24147
-Massachusetts,85,157194
+Massachusetts,85+,157194
 Michigan,0,112448
 Michigan,1,113175
 Michigan,2,113750
@@ -2062,7 +2062,7 @@ Michigan,81,39580
 Michigan,82,37927
 Michigan,83,36649
 Michigan,84,35040
-Michigan,85,210821
+Michigan,85+,210821
 Minnesota,0,69399
 Minnesota,1,69915
 Minnesota,2,69150
@@ -2148,7 +2148,7 @@ Minnesota,81,20991
 Minnesota,82,20183
 Minnesota,83,19148
 Minnesota,84,18115
-Minnesota,85,116662
+Minnesota,85+,116662
 Mississippi,0,37872
 Mississippi,1,38086
 Mississippi,2,39143
@@ -2234,7 +2234,7 @@ Mississippi,81,11142
 Mississippi,82,10423
 Mississippi,83,9747
 Mississippi,84,9018
-Mississippi,85,49635
+Mississippi,85+,49635
 Missouri,0,74184
 Missouri,1,74647
 Missouri,2,74602
@@ -2320,7 +2320,7 @@ Missouri,81,25535
 Missouri,82,23936
 Missouri,83,22543
 Missouri,84,20924
-Missouri,85,125005
+Missouri,85+,125005
 Montana,0,12269
 Montana,1,12207
 Montana,2,12147
@@ -2406,7 +2406,7 @@ Montana,81,4230
 Montana,82,4093
 Montana,83,3860
 Montana,84,3727
-Montana,85,21985
+Montana,85+,21985
 Nebraska,0,25903
 Nebraska,1,26012
 Nebraska,2,26007
@@ -2492,7 +2492,7 @@ Nebraska,81,7634
 Nebraska,82,7524
 Nebraska,83,7241
 Nebraska,84,6693
-Nebraska,85,41852
+Nebraska,85+,41852
 Nevada,0,34862
 Nevada,1,34778
 Nevada,2,34452
@@ -2578,7 +2578,7 @@ Nevada,81,9500
 Nevada,82,8665
 Nevada,83,7928
 Nevada,84,7391
-Nevada,85,37764
+Nevada,85+,37764
 New Hampshire,0,12561
 New Hampshire,1,12765
 New Hampshire,2,12703
@@ -2664,7 +2664,7 @@ New Hampshire,81,5433
 New Hampshire,82,5153
 New Hampshire,83,4848
 New Hampshire,84,4537
-New Hampshire,85,27875
+New Hampshire,85+,27875
 New Jersey,0,104144
 New Jersey,1,105577
 New Jersey,2,106408
@@ -2750,7 +2750,7 @@ New Jersey,81,35478
 New Jersey,82,34525
 New Jersey,83,32946
 New Jersey,84,31560
-New Jersey,85,194960
+New Jersey,85+,194960
 New Mexico,0,26870
 New Mexico,1,27192
 New Mexico,2,27301
@@ -2836,7 +2836,7 @@ New Mexico,81,8060
 New Mexico,82,7768
 New Mexico,83,7168
 New Mexico,84,6927
-New Mexico,85,37373
+New Mexico,85+,37373
 New York,0,239804
 New York,1,238674
 New York,2,236580
@@ -2922,7 +2922,7 @@ New York,81,78011
 New York,82,74429
 New York,83,71279
 New York,84,69440
-New York,85,429182
+New York,85+,429182
 North Carolina,0,119904
 North Carolina,1,120678
 North Carolina,2,120244
@@ -3008,7 +3008,7 @@ North Carolina,81,37567
 North Carolina,82,35134
 North Carolina,83,31609
 North Carolina,84,29820
-North Carolina,85,170382
+North Carolina,85+,170382
 North Dakota,0,10788
 North Dakota,1,10400
 North Dakota,2,10239
@@ -3094,7 +3094,7 @@ North Dakota,81,3091
 North Dakota,82,2944
 North Dakota,83,2843
 North Dakota,84,2725
-North Dakota,85,17959
+North Dakota,85+,17959
 Ohio,0,137250
 Ohio,1,138067
 Ohio,2,137573
@@ -3180,7 +3180,7 @@ Ohio,81,48046
 Ohio,82,46046
 Ohio,83,44345
 Ohio,84,42020
-Ohio,85,250929
+Ohio,85+,250929
 Oklahoma,0,52631
 Oklahoma,1,52975
 Oklahoma,2,52808
@@ -3266,7 +3266,7 @@ Oklahoma,81,15294
 Oklahoma,82,14147
 Oklahoma,83,13040
 Oklahoma,84,12379
-Oklahoma,85,68092
+Oklahoma,85+,68092
 Oregon,0,45383
 Oregon,1,45482
 Oregon,2,45662
@@ -3352,7 +3352,7 @@ Oregon,81,15242
 Oregon,82,14557
 Oregon,83,14008
 Oregon,84,13159
-Oregon,85,83540
+Oregon,85+,83540
 Pennsylvania,0,141898
 Pennsylvania,1,143046
 Pennsylvania,2,143081
@@ -3438,7 +3438,7 @@ Pennsylvania,81,58752
 Pennsylvania,82,58138
 Pennsylvania,83,56350
 Pennsylvania,84,53594
-Pennsylvania,85,331229
+Pennsylvania,85+,331229
 Rhode Island,0,10981
 Rhode Island,1,10891
 Rhode Island,2,11061
@@ -3524,7 +3524,7 @@ Rhode Island,81,4541
 Rhode Island,82,4194
 Rhode Island,83,4201
 Rhode Island,84,4165
-Rhode Island,85,28309
+Rhode Island,85+,28309
 South Carolina,0,57439
 South Carolina,1,57076
 South Carolina,2,57999
@@ -3610,7 +3610,7 @@ South Carolina,81,18742
 South Carolina,82,17146
 South Carolina,83,15568
 South Carolina,84,14196
-South Carolina,85,80384
+South Carolina,85+,80384
 South Dakota,0,12313
 South Dakota,1,12291
 South Dakota,2,12034
@@ -3696,7 +3696,7 @@ South Dakota,81,3685
 South Dakota,82,3604
 South Dakota,83,3427
 South Dakota,84,3290
-South Dakota,85,20871
+South Dakota,85+,20871
 Tennessee,0,79506
 Tennessee,1,79722
 Tennessee,2,80822
@@ -3782,7 +3782,7 @@ Tennessee,81,25105
 Tennessee,82,23569
 Tennessee,83,21553
 Tennessee,84,20333
-Tennessee,85,111140
+Tennessee,85+,111140
 Texas,0,387632
 Texas,1,389728
 Texas,2,387232
@@ -3868,7 +3868,7 @@ Texas,81,79588
 Texas,82,74472
 Texas,83,69237
 Texas,84,65613
-Texas,85,361502
+Texas,85+,361502
 Utah,0,50629
 Utah,1,50858
 Utah,2,49147
@@ -3954,7 +3954,7 @@ Utah,81,7836
 Utah,82,7327
 Utah,83,6875
 Utah,84,6411
-Utah,85,34758
+Utah,85+,34758
 Vermont,0,6023
 Vermont,1,6053
 Vermont,2,6171
@@ -4040,7 +4040,7 @@ Vermont,81,2710
 Vermont,82,2527
 Vermont,83,2360
 Vermont,84,2289
-Vermont,85,14107
+Vermont,85+,14107
 Virginia,0,103122
 Virginia,1,103214
 Virginia,2,103381
@@ -4126,7 +4126,7 @@ Virginia,81,29134
 Virginia,82,27080
 Virginia,83,25075
 Virginia,84,23826
-Virginia,85,138840
+Virginia,85+,138840
 Washington,0,88662
 Washington,1,89670
 Washington,2,89089
@@ -4212,7 +4212,7 @@ Washington,81,23903
 Washington,82,22497
 Washington,83,21530
 Washington,84,20374
-Washington,85,128688
+Washington,85+,128688
 West Virginia,0,20347
 West Virginia,1,20610
 West Virginia,2,20689
@@ -4298,7 +4298,7 @@ West Virginia,81,8483
 West Virginia,82,7984
 West Virginia,83,7598
 West Virginia,84,7241
-West Virginia,85,38735
+West Virginia,85+,38735
 Wisconsin,0,66880
 Wisconsin,1,67497
 Wisconsin,2,68626
@@ -4384,7 +4384,7 @@ Wisconsin,81,23596
 Wisconsin,82,22805
 Wisconsin,83,22069
 Wisconsin,84,21131
-Wisconsin,85,128096
+Wisconsin,85+,128096
 Wyoming,0,7614
 Wyoming,1,7608
 Wyoming,2,7506
@@ -4470,4 +4470,4 @@ Wyoming,81,1980
 Wyoming,82,1915
 Wyoming,83,1887
 Wyoming,84,1764
-Wyoming,85,10047
+Wyoming,85+,10047

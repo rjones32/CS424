@@ -81,7 +81,7 @@
                 .append("g")
                 .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
         */
-        d3.csv("ageRanges.csv", function(error, data) {
+        d3.csv("popEST.csv", function(error, data) {
             console.log(data);
             data.forEach(function (d) {
                 d.POP = +d.POP;

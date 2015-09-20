@@ -1,6 +1,8 @@
 #container,
 #chart,
 #chart1,
+#chart2,
+#chart3,
 #map,
 #menu-bar,
 #mapSelectors,
@@ -9,6 +11,7 @@
 #eventSelectors,
 #eventSelectors select,
 #eventSelectors select option,
+
 
 
 
@@ -32,12 +35,20 @@
 
 #chart{
     float: left;
-    background-color: #105cb6;
+    /*background-color: #105cb6;*/
 
 }
 #chart1{
     float: left;
-    background-color: #f1f1f1;
+    /*background-color: #F5F5DC;*/
+}
+
+#chart2{
+    float:left;
+    /*background-color: #f8f8f8;*/
+}
+#chart3{
+    float:left;
 }
 
 .axis text{
@@ -53,3 +64,7 @@
 
 }
 
+svg .arc {
+    stroke: #000;
+    stroke-width: .5px;
+}

@@ -8,9 +8,9 @@ readable = csv.reader(csvFile)
 writable = csv.writer(open("output.csv",'w'))
 filterData = []
 line1 = []
-Headers = ["STATE","AGE","POP"]
+Headers = ["STATE","AGE","POP","AGEGROUP"]
 filterData.append(Headers)
-
+AGEGROUP = 0;
 
 
 #for line in readable:
@@ -56,9 +56,11 @@ for line in readable:
 
 
                 line1.append(popCount)
+                line1.append(AGEGROUP)
                 filterData.append(line1)
 
                 line1 = []
+                AGEGROUP= ++AGEGROUP
                 popCount = 0 + value
 
             else:

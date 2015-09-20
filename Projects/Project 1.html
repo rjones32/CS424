@@ -15,7 +15,7 @@
 
     <title>Project 1</title>
 </head>
-<body>
+<body bgcolor="#F5F5DC">
 <div class ="container">
     <div id="map">
             <style>
@@ -35,7 +35,7 @@
         <div id ="mapSelectors">
 
 
-            <select id="locBox1" onchange="updateGraph(this.value)">
+            <select id="locBox1" onchange="locSelect(locBox1)">
                 <option value="United States">USA</option>
                 <option value="Alabama">Alabama</option>
                 <option value="Alaska">Alaska</option>
@@ -87,8 +87,7 @@
 
 
             </select>
-            <select id="locBox2" onchange="updateGraph(this.value)">
-                <option value="" disabled selected style="display:none;">States</option>
+            <select id="locBox2" onchange="locSelect(locBox2)">
                 <option value="United States">USA</option>
                 <option value="Alabama">Alabama</option>
                 <option value="Alaska">Alaska</option>
@@ -140,8 +139,7 @@
 
 
             </select>
-            <select id="locBox3" onchange="updateGraph(this.value)">
-                <option value="" disabled selected style="display:none;">States</option>
+            <select id="locBox3" onchange="locSelect(locBox3)">
                 <option value="United States">USA</option>
                 <option value="Alabama">Alabama</option>
                 <option value="Alaska">Alaska</option>
@@ -204,13 +202,21 @@
         </div>
 
         <div id="eventSelectors">
-            <select id ="eventBox" onchange="">
-                <option>Great Recession</option>
-                <option>9-11 </option>
-                <option>Vietnam</option>
-                <option>Wood Stock</option>
-                <option>D-Day</option>
+            <select id ="eventBox" onchange="highLightEvent()">
+                <option value="" disabled selected style="display:none;">Select Event</option>
+                <option value="23">Great Recession</option>
+                <option value="21">9-11 </option>
+                <option value="37">Golf War</option>
+                <option value="42">Windows 1.0</option>
+                <option value="52">Apple-1</option>
+                <option value="52">Munich Massacre</option>
+                <option value="51">Apollo 11</option>
+                <option value="48">Vietnam</option>
+                <option value="60">Wood Stock</option>
+                <option value="78">D-Day</option>
             </select>
+
+            <button id ="hightLight" onclick="hightLightTrigger()">HighLight</button>
 
 
         </div>

@@ -8,42 +8,61 @@
 #mapSelectors,
 #mapSelectors select,
 #mapSelectors select option,
+#mapSelectors button,
 #eventSelectors,
 #eventSelectors select,
 #eventSelectors select option,
+#eventSelectors button,
 
 
-
-
-#map{
-    margin: 10px 0px;
-    z-index: 9;
-
+#menu-bar{
+    height: 30px;
+    width: 700px;
+    float:right;
 }
 
+#mapSelectors{
+    top:100px;
+
+}
 #mapSelectors > select{
-    margin: -5px 0px;
-    height:20px;
-    width:11%;
+    margin: 5px 5px;
+    height:75%;
+    width:25%;
+    float:left;
 }
+
+#mapSelectors > button{
+    height:90%;
+    width:17%;
+    float:left;
+
+}
+
 
 #eventSelectors > select{
-    margin: -5px 0px;
-    height:20px;
-    width:11%;
+    margin: 5px 5px;
+    height:75%;
+    width:25%;
+    float: left;
+}
+
+#eventSelectors> button{
+    margin: 5px 10px;
+    height:90%;
+    width:17%;
+    float: left;
 }
 
 #chart{
     width: auto;
-    float: left;
     /*background-color: #105cb6;*/
 
 }
 #chart1{
     height: auto;
     width: 100%;
-    position: relative;
-    background-color: #91e3f5;
+    /*background-color: #91e3f5;*/
 }
 
 #chart2{
@@ -77,4 +96,10 @@ svg .arc {
 .legend{
     top: 20px;
 
+}
+
+.line{
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
 }

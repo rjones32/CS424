@@ -24,31 +24,36 @@
 #mapSelectors > select{
     margin: -5px 0px;
     height:20px;
-    width:100px;
+    width:11%;
 }
 
 #eventSelectors > select{
     margin: -5px 0px;
     height:20px;
-    width:100px;
+    width:11%;
 }
 
 #chart{
+    width: auto;
     float: left;
     /*background-color: #105cb6;*/
 
 }
 #chart1{
-    float: left;
-    /*background-color: #F5F5DC;*/
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-color: #91e3f5;
 }
 
 #chart2{
-    float:left;
+    height:auto;
+    width:100%;
     /*background-color: #f8f8f8;*/
 }
 #chart3{
-    float:left;
+    height:auto;
+    width:100%;
 }
 
 .axis text{
@@ -67,4 +72,9 @@
 svg .arc {
     stroke: #000;
     stroke-width: .5px;
+}
+
+.legend{
+    top: 20px;
+
 }

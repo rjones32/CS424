@@ -17,7 +17,7 @@ var color2;
 
 function createGraph1() {
     var x0 =0;
-    var margin = {top: 20, right: 20, bottom: 30, left: 60},
+    var margin = {top: 20, right: 20, bottom: 30, left: 80},
         width = 800 - margin.left - margin.right,
         height = 250 - margin.top - margin.bottom;
 
@@ -99,7 +99,7 @@ function createGraph1() {
 
 function createGraph2() {
     var x0 =0;
-    var margin = {top: 20, right: 20, bottom: 30, left: 60},
+    var margin = {top: 20, right: 20, bottom: 30, left: 80},
         width = 800 - margin.left - margin.right,
         height = 250 - margin.top - margin.bottom;
 
@@ -164,7 +164,7 @@ function createGraph2() {
 
 function createGraph3() {
     var x0 =0;
-    var margin = {top: 20, right: 20, bottom: 30, left: 60},
+    var margin = {top: 20, right: 20, bottom: 30, left: 80},
         width = 800 - margin.left - margin.right,
         height = 250 - margin.top - margin.bottom;
 
@@ -234,7 +234,7 @@ function updateGraph(graph) {
     //updatePie();
     graph.selectAll("*").remove();
 
-    var margin = {top: 20, right: 20, bottom: 30, left: 60},
+    var margin = {top: 20, right: 20, bottom: 30, left: 80},
         width = 800 - margin.left - margin.right,
         height = 250 - margin.top - margin.bottom;
 
@@ -261,7 +261,7 @@ function updateGraph(graph) {
         .call(xAxis)
         .selectAll("text")
         .style("text-anchor", "start")
-        .attr("font-size","15px")
+        .attr("font-size","12px")
         .attr("y",0)
         .attr("x",9)
         .attr("dy", ".35em")
@@ -271,6 +271,7 @@ function updateGraph(graph) {
         .call(yAxis)
         .append("text")
         .attr("transform", "rotate(-90)")
+        .attr("font-size","12px")
         .attr("y",6)
         .attr("dy", ".71em")
         .style("text-anchor","end")
@@ -314,10 +315,9 @@ function updateGraph(graph) {
      graph.selectAll("*").remove();
 
 
-     var margin = {top: 20, right: 20, bottom: 30, left: 60},
+     var margin = {top: 20, right: 20, bottom: 30, left: 80},
          width = 800 - margin.left - margin.right,
          height = 250 - margin.top - margin.bottom;
-
      stateData_Array = d3.values(stateData);
 
 
@@ -334,7 +334,7 @@ function updateGraph(graph) {
          .call(xAxis)
          .selectAll("text")
          .style("text-anchor", "start")
-         .attr("font-size","15px")
+         .attr("font-size","12px")
          .attr("y",0)
          .attr("x",9)
          .attr("dy", ".35em")
@@ -356,14 +356,36 @@ function updateGraph(graph) {
          .attr("y", function(d) { return y(d.POP); })
          .attr("height", function(d) { return height - y(d.POP); })
          .style("fill",  function (d) {
+             ageValue = 0;
+             boundaryAGE = (startAGE - parseInt(d.AGE));
+             console.log(boundaryAGE);
+             if(boundaryAGE<10 && boundaryAGE>0)
+                 ageValue = boundaryAGE + parseInt(d.AGE);
+
+             console.log(ageValue);
              if(d.AGE>=startAGE)
                  return "#35A59A";
 
              else if(d.AGE=="85+"&&85>=startAGE)
                 return "#35A59A";
 
+             else if((AgeRange==true) && (ageValue==startAGE)){
+                 console.log(ageValue);
+                 sliceColor = d3.scale.linear()
+                     .domain([0,30])
+                     .range([color1(startAGE),"#35A59A"]);
+                 return sliceColor(startAGE);
+             }
+
              else
                 return color1(d.AGE);
-         });
+         })
+
+     graph.append("text")
+         .attr("x",(width/2))
+         .attr("y",1-(margin.top/2))
+         .attr("text-anchor","middle")
+         .style("font-size","16px")
+         .text(stateData_Array[0].STATE);
 
 }

@@ -4,21 +4,25 @@
 
 var margin, height,width,arc,
     color,
-    pie,pieChart1,pieChart2,pieChart3,g;
+    pie,pieChart1,pieChart2,pieChart3, g,pos;
 
-var legendRectSize = 18;
-var legendSpacing = 4;
+
 
 function createPieChart1() {
 
 
-   /* var width = 960,
-        height = 500,
+   /* var width = 200,
+        height = 250,
         radius = Math.min(width, height) / 2;*/
-    margin = {top: 20, right: 20, bottom: 10, left: 60},
-        width = 500 - margin.left - margin.right,
+    margin = {top: 20, right: 20, bottom: 10, left: 20},
+        width = 350 - margin.left - margin.right,
         height = 250 - margin.top - margin.bottom;
         radius = Math.min(width,height)/2;
+
+    console.log(width);
+    console.log(height);
+
+    pos = d3.svg.arc().innerRadius(radius + 10).outerRadius(radius + 10);
 
     var key;
      color = d3.scale.ordinal()
@@ -30,13 +34,16 @@ function createPieChart1() {
     pie = d3.layout.pie()
         .sort(null)
         .value(function(d) { return d.POP; });
+
     pieChart1 = d3.select("#chart1").append("svg")
         .attr("width", width)
         .attr("height", height)
         .append("g")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    console.log(width/2);
 
     stateData_Array = d3.values(stateData);
+
 
      g = pieChart1.selectAll(".arc")
             .data(pie(stateData_Array))
@@ -47,26 +54,40 @@ function createPieChart1() {
             .style("fill", function (d) {
                 return color(d.data.AGE);
             });
+    g.append("text")
+        .attr("transform", "rotate(90)")
+        .attr("transform", function (d){
+            console.log(d);
+            console.log(pos.centroid(d));
+            return "translate(" + pos.centroid(d) + ")";
+        })
+        .attr("dy", "-.21em")
+        .attr("font-size","12px")
+        .style("text-anchor", "middle")
+        .text(function (d) {
+            return d.data.AGE;
+        });
 
-    var legend = pieChart1.selectAll(".legend")
-        .data(color.domain())
+
+
+
+    /*var legend = pieChart1.selectAll(".legend")
+        .data(color.domain().slice().reverse())
         .enter().append("g")
-        .attr("y",50)
         .attr("class","legend")
-        .attr("width",radius*20)
-        .attr("height",radius*20)
-        .style("right",100)
         .attr("transform",function(d,i){
-            return "translate(130,"+i*15+")";});
+            return "translate(0,"+ i * 15+")";});
     legend.append('rect')
+        .attr("x",200)
+        .attr("y",-95)
         .attr('width',18)
         .attr('height',18)
         .style('fill',color)
     legend.append("text")
-        .attr("x",24)
+        .attr("x",220)
         .attr("y",9)
         .attr("dy",".35em")
-        .text(function(d){return d;});
+        .text(function(d){return d;});*/
 
 }
 
@@ -179,6 +200,19 @@ function updatePie(graph){
         .style("fill", function (d) {
             return color(d.data.AGE);
         });
+    g.append("text")
+        .attr("transform", "rotate(90)")
+        .attr("transform", function (d){
+            console.log(d);
+            console.log(pos.centroid(d));
+            return "translate(" + pos.centroid(d) + ")";
+        })
+        .attr("dy", "-.21em")
+        .attr("font-size","12px")
+        .style("text-anchor", "middle")
+        .text(function (d) {
+            return d.data.AGE;
+        });
 
 
 
@@ -192,6 +226,8 @@ function hLPie(graph){
         width = 1200 - margin.left - margin.right,
         height = 250 - margin.top - margin.bottom;
     radius = Math.min(width,height)/2;
+
+
 
     /*color = d3.scale.ordinal()
         .domain([0,10])
@@ -210,14 +246,28 @@ function hLPie(graph){
     g.append("path")
         .attr("d", arc)
         .style("fill", function (d) {
+            boundaryAGE = (startAGE - parseInt(d.data.AGE));
+            if(boundaryAGE<10 && boundaryAGE>0)
+                ageValue = boundaryAGE+ parseInt(d.data.AGE);
+
             if(d.data.AGE>=startAGE)
                 return "#35A59A";
 
             else if(d.data.AGE=="85+"&&85>=startAGE)
                 return "#35A59A";
 
-            else
+            else if((AgeRange==true) && (ageValue==startAGE)){
+                console.log(ageValue);
+                sliceColor = d3.scale.linear()
+                    .domain([0,30])
+                    .range([color1(startAGE),"#35A59A"]);
+                return sliceColor(startAGE);
+            }
+
+            else {
+                console.log(color1(d.data.AGE));
                 return color1(d.data.AGE);
+            }
         });
 
 }
